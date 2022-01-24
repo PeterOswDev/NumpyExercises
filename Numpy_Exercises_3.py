@@ -58,24 +58,59 @@ print(np.sort(arr))
 #
 # c = np.concatenate(a,b)
 # print(c)
-x = np.array([[1, 2], [3, 4]])
-y = np.array([[5, 6]])
+# x = np.array([[1, 2], [3, 4]])
+# y = np.array([[5, 6]])
+#
+# z = np.concatenate((x, y), axis=0)
+# print(z)
+#
+# array_example = np.array([[[0, 1 ,2, 3],
+#                            [4, 5, 6, 7]],
+#                           [[0, 1, 2, 3],
+#                            [4, 5, 6,7]],
+#                           [[0, 1, 2, 3],
+#                            [4, 5 ,6 ,7]]])
+#
+# print(array_example)
+#
+# print(array_example.ndim)
+# print(array_example.size)
+# print(array_example.shape)
 
-z = np.concatenate((x, y), axis=0)
-print(z)
+# a = np.arange(6)
+# print(a)
+#
+# b = a.reshape(3, 2)
+# print(b)
+# c = np.reshape(a,newshape=(1,6), order='C')
+# print(c)
 
-array_example = np.array([[[0, 1 ,2, 3],
-                           [4, 5, 6, 7]],
-                          [[0, 1, 2, 3],
-                           [4, 5, 6,7]],
-                          [[0, 1, 2, 3],
-                           [4, 5 ,6 ,7]]])
+a = np.array([1, 2, 3, 4, 5, 6])
+print(a.shape)
+a2 = a[np.newaxis, :]
+print(a2.shape)
+row_vector = a[np.newaxis, :]
+print(row_vector.shape)
+col_vector = a[:, np.newaxis]
+print(col_vector.shape)
 
-print(array_example)
+b = np.expand_dims(a, axis=1)
+print(b.shape)
+c = np.expand_dims(a, axis=0)
+print(c.shape)
 
-print(array_example.ndim)
-print(array_example.size)
-print(array_example.shape)
+data = np.array([1, 2, 3])
+print(data)
+print(data[1])
+print(data[1:])
+print(data[-2:])
+
+
+
+
+
+
+
 
 
 
